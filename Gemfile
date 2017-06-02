@@ -36,6 +36,18 @@ gem 'afm', '0.2.1'
 gem 'pdfkit', '0.5.3'
 gem 'wicked_pdf', '0.11.0'
 
+#Create a Development Architect
+#Authentication gem
+gem 'devise', '~> 3.4.0'
+gem 'devise-bootstrapped'
+
+#Bootstrap design
+gem 'bootstrap-generators', '~> 3.3.4'
+
+#View template slim
+gem 'slim-rails', '~> 3.1', '>= 3.1.1'
+gem 'html2slim'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -51,17 +63,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  #Create a Development Architect
-  #Authentication gem
-  gem 'devise', '~> 3.4.0'
-  gem 'devise-bootstrapped'
 
-  #Bootstrap design
-  gem 'bootstrap-generators', '~> 3.3.4'
-
-  #View template slim
-  gem 'slim-rails', '~> 3.1', '>= 3.1.1'
-  gem 'html2slim'
 end
 
 group :production do
