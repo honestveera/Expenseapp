@@ -8,6 +8,20 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+  config.action_mailer.default_url_options = { host: '127.0.0.1', port: 3000 }
+  ActionMailer::Base.delivery_method = :smtp
+  # SMTP settings for gmail
+  ActionMailer::Base.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "gmail.com",
+      :user_name            => "honestraj.it@gmail.com",
+      :password             => "9994813212",
+      :authentication       => "plain",
+      :enable_starttls_auto => true
+
+  }
+
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true

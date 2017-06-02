@@ -41,14 +41,11 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     afm (0.2.1)
     arel (6.0.4)
-    autoprefixer-rails (7.1.1)
-      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+    bootstrap-generators (3.3.4)
+      railties (>= 3.1.0)
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.14.0)
@@ -70,12 +67,14 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.3)
-    devise (4.3.0)
+    devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 4.1.0, < 5.2)
+      railties (>= 3.2.6, < 5)
       responders
+      thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-bootstrapped (0.1.1)
     diff-lcs (1.3)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
@@ -103,6 +102,9 @@ GEM
     heroku-api (0.4.2)
       excon (~> 0.45)
       multi_json (~> 1.8)
+    hpricot (0.8.6)
+    html2slim (0.2.0)
+      hpricot
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.8.1)
@@ -113,6 +115,9 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    jquery-turbolinks (2.1.0)
+      railties (>= 3.1.0)
+      turbolinks
     json (1.8.6)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -287,15 +292,18 @@ PLATFORMS
 
 DEPENDENCIES
   afm (= 0.2.1)
-  bootstrap-sass
+  bootstrap-generators (~> 3.3.4)
   byebug
   capybara
   coffee-rails (~> 4.1.0)
-  devise
+  devise (~> 3.4.0)
+  devise-bootstrapped
   factory_girl_rails
   heroku
+  html2slim
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-turbolinks
   pdf-reader (= 1.4.0)
   pdfkit (= 0.5.3)
   pg
@@ -312,11 +320,10 @@ DEPENDENCIES
   spring
   sqlite3
   therubyracer
-  turbolinks
   turnip
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
   wicked_pdf (= 0.11.0)
 
 BUNDLED WITH
-   1.13.7
+   1.15.1

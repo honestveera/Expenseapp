@@ -31,7 +31,7 @@ module Expenseapp
     config.generators do |g|
       g.orm :active_record
       g.template_engine :slim
-      g.preferred_syntax = :sass
+      g.style_sheet_engine :sass
       g.test_framework :rspec, :fixture => true, :views => false
     end
     config.action_mailer_default_url_options = {}
