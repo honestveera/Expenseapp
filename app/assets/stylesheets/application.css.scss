@@ -21,6 +21,10 @@
      background-size: cover;
      background-color: #0c5c69;
  }
+ body
+ {
+   padding-top: 0px;
+ }
 
  .login-wrap {
     width: 100%;
@@ -137,7 +141,7 @@ nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
 
 /*gives sidebar width/height*/
 nav.sidebar{
-  width: 220px;
+  width: 200px;
   height: 100%;
   margin-left: -160px;
   float: left;
@@ -191,4 +195,28 @@ opacity: 1;
 }
 section{
 padding-left: 15px;
+}
+/*Profile Pic CSS*/
+.profile_pic {
+    width: 35%;
+    float: left;
+}
+.img-circle.profile_img {
+width: 90%;
+background: #fff;
+margin-left: 15%;
+z-index: 1000;
+position: inherit;
+margin-top: 50px;
+border: 1px solid rgba(52, 73, 94, 0.44);
+padding: 4px;
+height: 60px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.profile_info {
+    padding: 25px 10px 10px;
+    width: 65%;
+    float: left;
 }

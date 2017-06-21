@@ -47,7 +47,8 @@ gem 'bootstrap-generators', '~> 3.3.4'
 #View template slim
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'html2slim'
-
+#File upload
+gem 'paperclip', '~> 4.1'
 #Continuous integration tool
 gem 'travis'
 
