@@ -9,34 +9,34 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
 //= require jquery
-//= require jquery_ujs
-//= require jquery.turbolinks
-//= require bootstrap
-//= require_tree .
-function htmlbodyHeightUpdate(){
-var height3 = $( window ).height()
-var height1 = $('.nav').height()+50
-height2 = $('.main').height()
-if(height2 > height3){
-  $('html').height(Math.max(height1,height3,height2)+10);
-  $('body').height(Math.max(height1,height3,height2)+10);
-}
-else
-{
-  $('html').height(Math.max(height1,height3,height2));
-  $('body').height(Math.max(height1,height3,height2));
-}
+//= require bootstrap-sprockets
 
-}
-$(document).ready(function () {
-htmlbodyHeightUpdate()
-$( window ).resize(function() {
-  htmlbodyHeightUpdate()
-});
-$( window ).scroll(function() {
-  height2 = $('.main').height()
-    htmlbodyHeightUpdate()
-});
-});
+//= require jquery_ujs
+//= require turbolinks
+
+//= require gentelella/production/js/flot/jquery.flot.js
+//= require gentelella/production/js/flot/jquery.flot.pie.js
+//= require gentelella/production/js/flot/jquery.flot.orderBars.js
+//= require gentelella/production/js/flot/jquery.flot.time.min.js
+//= require gentelella/production/js/flot/date.js
+//= require gentelella/production/js/flot/jquery.flot.spline.js
+//= require gentelella/production/js/flot/jquery.flot.stack.js
+//= require gentelella/production/js/flot/curvedLines.js
+//= require gentelella/production/js/flot/jquery.flot.resize.js
+
+//= require gentelella/production/js/progressbar/bootstrap-progressbar.min.js
+
+//= require gentelella/production/js/icheck/icheck.min.js
+
+//= require gentelella/production/js/moment/moment.min.js
+//= require gentelella/production/js/datepicker/daterangepicker.js
+
+//= require gentelella/production/js/chartjs/chart.min.js
+
+//= require gentelella/production/js/pace/pace.min.js
+
+//= require  gentelella/production/js/nprogress.js
+
+//= require flash.js
+
